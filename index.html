@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VAMA Logistics | Transporte y Distribución</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- HEADER & NAVBAR -->
     <header class="navbar">
         <div class="container header-container">
             <div class="logo">
-                <span class="va">VA</span><span class="ma">MA</span> 
-                <span class="logistics">LOGISTICS</span>
+                <img src="img/logo vama.png" alt="VAMA Logistics Logo" style="height: 100px; width: auto; object-fit: contain; border-radius: 4px;">
             </div>
             
-            <!-- Botón Hamburguesa para Móvil -->
             <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
                 <span></span>
                 <span></span>
@@ -27,24 +26,32 @@
                     <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
                     <li><a href="#servicios" class="nav-link">Servicios</a></li>
                     <li><a href="#tecnologia" class="nav-link">Tecnología</a></li>
-                    <li><a href="#cobertura" class="nav-link">Cobertura</a></li>
+                    <li><a href="#distribucion" class="nav-link">Distribución</a></li>
                     <li><a href="#flota" class="nav-link">Flota</a></li>
+                    <li><a href="#clientes" class="nav-link">Clientes</a></li>
                     <li><a href="#contacto" class="nav-link">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- HERO SECTION -->
     <section class="hero">
         <div class="container hero-content reveal">
             <h1>Movemos Chile con precisión y compromiso.</h1>
             <p>Soluciones de transporte, logística y distribución de alto estándar a nivel nacional, de Arica a Punta Arenas.</p>
-            <a href="#contacto" class="btn btn-primary">Cotizar Servicio</a>
+            
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 10px;">
+                <a href="#contacto" class="btn btn-primary">Cotizar Servicio</a>
+                <a href="https://wa.me/56993248016?text=Hola,%20me%20gustaría%20postular%20para%20trabajar%20en%20VAMA%20Logistics%20y%20enviar%20mi%20CV." 
+                   class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                   Trabaja con Nosotros
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Quiénes Somos -->
+    <!-- NOSOTROS -->
     <section id="nosotros" class="about section">
         <div class="container">
             <div class="section-title reveal">
@@ -83,7 +90,7 @@
         </div>
     </section>
 
-    <!-- Servicios y Sectores -->
+    <!-- SERVICIOS -->
     <section id="servicios" class="services section bg-light">
         <div class="container">
             <div class="section-title reveal">
@@ -104,22 +111,55 @@
                     <p>Picking, packing y almacenamiento con WMS, Dispatch Track e integración vía API para control en tiempo real.</p>
                 </div>
             </div>
-            
-            <div class="sectores-grid mt-5 reveal">
-                <div class="sector-title">
-                    <h3>Sectores que Atendemos</h3>
+        </div>
+    </section>
+
+    <!-- SECTORES QUE ATENDEMOS -->
+    <section id="sectores" class="sectores-advanced-section section">
+        <div class="container reveal">
+            <div class="clients-header" style="margin-bottom: 50px;">
+                <h2 style="font-size: 2.8rem; font-weight: 500; color: #ffffff; margin-bottom: 15px;">Soluciones para cada industria</h2>
+                <p style="color: #aaaaaa; font-size: 1.1rem;">Adaptamos nuestra flota y operación a las necesidades de cada rubro.</p>
+            </div>
+
+            <div class="sectores-grid-advanced">
+                <div class="sector-card-pro">
+                    <div class="sector-icon-pro">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#666666" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    </div>
+                    <span class="sector-number">01</span>
+                    <h4>E-commerce</h4>
+                    <p>Despachos de distribución y last mile para tiendas online en crecimiento.</p>
                 </div>
-                <div class="sector-items">
-                    <span class="sector-tag">E-commerce</span>
-                    <span class="sector-tag">Retail y Tiendas</span>
-                    <span class="sector-tag">Salud y Farma</span>
-                    <span class="sector-tag">Alimentos y Consumo Masivo</span>
+                <div class="sector-card-pro">
+                    <div class="sector-icon-pro">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#666666" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18V3H3zm18 5H3m18 5H3m18 5H3"></path><rect x="5" y="4" width="4" height="3"></rect><rect x="11" y="9" width="4" height="3"></rect><rect x="15" y="14" width="4" height="3"></rect></svg>
+                    </div>
+                    <span class="sector-number">02</span>
+                    <h4>Retail y tiendas</h4>
+                    <p>Reposición y distribución entre locales, bodegas y clientes finales.</p>
+                </div>
+                <div class="sector-card-pro">
+                    <div class="sector-icon-pro">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#666666" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <span class="sector-number">03</span>
+                    <h4>Salud y farma</h4>
+                    <p>Transporte confiable para insumos y productos con tiempos críticos.</p>
+                </div>
+                <div class="sector-card-pro">
+                    <div class="sector-icon-pro">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#666666" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    </div>
+                    <span class="sector-number">04</span>
+                    <h4>Alimentos y consumo</h4>
+                    <p>Transporte confiable para cadenas masivas, con flota apta para carga seca y unidades Thermo con frío activo.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Propuesta de Valor / Tecnología -->
+    <!-- TECNOLOGÍA -->
     <section id="tecnologia" class="section">
         <div class="container">
             <div class="section-title reveal">
@@ -143,110 +183,267 @@
         </div>
     </section>
 
-    <!-- Cobertura -->
-    <section id="cobertura" class="coverage section dark-section">
-        <div class="container">
-            <div class="section-title reveal">
-                <h2 class="text-white">Cobertura Nacional</h2>
-                <p class="text-light">Transporte y distribución a lo largo de todo Chile.</p>
+    <!-- SERVICIO DE DISTRIBUCIÓN -->
+    <section id="distribucion" class="section dark-section">
+        <div class="container reveal">
+            <div class="clients-header" style="margin-bottom: 40px;">
+                <h3 class="clients-title" style="margin-bottom: 15px; font-weight: 500; font-size: 2.2rem;">Entregas en el mismo día, bajo control</h3>
+                <p style="color: #aaaaaa; font-size: 1.1rem; max-width: 750px;">Un modelo de despacho desde nuestra bodega que combina rapidez operativa con visibilidad completa de cada pedido.</p>
             </div>
-            <div class="coverage-grid">
-                <div class="coverage-card reveal delay-100">
-                    <h4>Alcance Nacional</h4>
-                    <p>Operaciones continuas de Arica a Punta Arenas.</p>
+
+            <div class="dist-grid">
+                <div class="dist-card">
+                    <div class="dist-card-header">
+                        <div class="dist-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#cccccc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <h4>Velocidad</h4>
+                    </div>
+                    <p>Preparación y despacho ágil para entregar el mismo día.</p>
                 </div>
-                <div class="coverage-card reveal delay-200">
-                    <h4>Región Metropolitana</h4>
-                    <p>Base operativa, bodega de distribución y consolidación de carga para entregas ágiles.</p>
+                <div class="dist-card">
+                    <div class="dist-card-header">
+                        <div class="dist-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#cccccc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M9 14l2 2 4-4"></path></svg>
+                        </div>
+                        <h4>Control</h4>
+                    </div>
+                    <p>Seguimiento de rutas y estados en cada etapa del proceso.</p>
                 </div>
-                <div class="coverage-card reveal delay-300">
-                    <h4>Regiones</h4>
-                    <p>Rutas troncales directas y distribución regional, con nodo logístico sur estratégico en Osorno.</p>
+                <div class="dist-card">
+                    <div class="dist-card-header">
+                        <div class="dist-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#cccccc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line><path d="M9 10a3 3 0 1 1 6 0c0 1.5-3 4-3 4s-3-2.5-3-4z"></path><circle cx="12" cy="10" r="1"></circle></svg>
+                        </div>
+                        <h4>Trazabilidad</h4>
+                    </div>
+                    <p>Tracking en vivo y prueba de entrega digital para el cliente.</p>
+                </div>
+            </div>
+
+            <div class="timeline-container mt-5">
+                <h4 class="timeline-title">FLUJO OPERATIVO DE DISTRIBUCIÓN</h4>
+                <div class="timeline-wrapper">
+                    <div class="timeline-line"></div>
+                    <div class="timeline">
+                        <div class="timeline-step"><div class="timeline-dot"></div><div class="timeline-text"><h5><strong>1</strong> Recepción</h5><p>Ingreso del pedido</p></div></div>
+                        <div class="timeline-step"><div class="timeline-dot"></div><div class="timeline-text"><h5><strong>2</strong> Picking</h5><p>Preparación en bodega</p></div></div>
+                        <div class="timeline-step"><div class="timeline-dot"></div><div class="timeline-text"><h5><strong>3</strong> Packing</h5><p>Empaque y control</p></div></div>
+                        <div class="timeline-step"><div class="timeline-dot"></div><div class="timeline-text"><h5><strong>4</strong> Despacho</h5><p>Salida a ruta</p></div></div>
+                        <div class="timeline-step"><div class="timeline-dot"></div><div class="timeline-text"><h5><strong>5</strong> En ruta</h5><p>Tracking en vivo</p></div></div>
+                        <div class="timeline-step"><div class="timeline-dot"></div><div class="timeline-text"><h5><strong>6</strong> Entrega + POD</h5><p>Prueba digital</p></div></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Flota y Seguridad -->
-    <section id="flota" class="fleet section">
-        <div class="container">
-            <div class="section-title reveal">
-                <h2>Infraestructura y Flota</h2>
-                <p>Tractos de distintas marcas, un mismo estándar. Flota apta para la industria de alimentos y carga seca.</p>
+    <!-- FLOTA (TRANSPORTE PARA ALIMENTOS) -->
+    <section id="flota" class="section dark-section" style="border-top: 1px solid #222;">
+        <div class="container reveal">
+            <div class="clients-header" style="margin-bottom: 40px;">
+                <h3 class="clients-title" style="margin-bottom: 15px; font-weight: 500; font-size: 2.2rem;">Flota apta para la industria de alimentos</h3>
+                <p style="color: #aaaaaa; font-size: 1.1rem; max-width: 800px;">Unidades, protocolos y conductores preparados para el transporte de alimentos y consumo masivo.</p>
             </div>
-            <div class="fleet-grid">
-                <div class="fleet-info reveal delay-100">
-                    <h3>Nuestras Unidades</h3>
-                    <ul>
-                        <li><strong>Tractocamiones:</strong> Mercedes-Benz, International y Volvo.</li>
-                        <li><strong>Remolques y Ramplas:</strong> Furgonadas, planas y Sider (capacidades de 28 y 30 posiciones).</li>
-                        <li><strong>Transporte de Alimentos:</strong> Ramplas Thermo con frío activo (28 y 30 posiciones).</li>
-                        <li><strong>Capacidad Menor:</strong> Camiones de 6 a 10 posiciones y camionetas.</li>
-                    </ul>
+
+            <div class="dist-grid">
+                <div class="dist-card">
+                    <div class="dist-card-header">
+                        <div class="dist-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#cccccc" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                        </div>
+                        <h4>Ramplas furgonadas</h4>
+                    </div>
+                    <p>Capacidades de 28 y 30 posiciones para carga seca.</p>
                 </div>
-                <div class="fleet-info bg-light-grey reveal delay-200">
-                    <h3>Seguridad e Inocuidad</h3>
-                    <ul>
-                        <li>Lavado y sanitización de unidades antes de cada carga.</li>
-                        <li>Control de plagas estricto en bodega y áreas de preparación.</li>
-                        <li>Checklist de seguridad previo a cada ruta y control de fatiga para conductores.</li>
-                        <li>Cierre metálico trasero, candado y sellos de seguridad inviolables por carga.</li>
-                    </ul>
+                <div class="dist-card">
+                    <div class="dist-card-header">
+                        <div class="dist-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#cccccc" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"></line><line x1="17" y1="5" x2="12" y2="10"></line><line x1="7" y1="5" x2="12" y2="10"></line><line x1="17" y1="19" x2="12" y2="14"></line><line x1="7" y1="19" x2="12" y2="14"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="5" y1="7" x2="10" y2="12"></line><line x1="5" y1="17" x2="10" y2="12"></line><line x1="19" y1="7" x2="14" y2="12"></line><line x1="19" y1="17" x2="14" y2="12"></line></svg>
+                        </div>
+                        <h4>Ramplas Thermo</h4>
+                    </div>
+                    <p>Frío activo, con capacidades de 28 y 30 posiciones.</p>
+                </div>
+                <div class="dist-card">
+                    <div class="dist-card-header">
+                        <div class="dist-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#cccccc" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="2"></circle><line x1="12" y1="2" x2="12" y2="10"></line><line x1="12" y1="14" x2="12" y2="22"></line><line x1="2" y1="12" x2="10" y2="12"></line><line x1="14" y1="12" x2="22" y2="12"></line></svg>
+                        </div>
+                        <h4>Conductores especializados</h4>
+                    </div>
+                    <p>Experiencia en rutas de consumo masivo y retail.</p>
+                </div>
+            </div>
+
+            <div class="timeline-container mt-5">
+                <h4 class="timeline-title">ESTÁNDAR OPERACIONAL ANTES DE CADA CARGA</h4>
+                <div class="timeline-wrapper">
+                    <div class="timeline-line"></div>
+                    <div class="timeline">
+                        <div class="timeline-step"><div class="timeline-dot"></div><div class="timeline-text"><h5><strong>1</strong> Inspección</h5><p>Revisión de unidad</p></div></div>
+                        <div class="timeline-step"><div class="timeline-dot"></div><div class="timeline-text"><h5><strong>2</strong> Limpieza</h5><p>Lavado de rampla</p></div></div>
+                        <div class="timeline-step"><div class="timeline-dot"></div><div class="timeline-text"><h5><strong>3</strong> Sanitización</h5><p>Protocolo aplicado</p></div></div>
+                        <div class="timeline-step"><div class="timeline-dot"></div><div class="timeline-text"><h5><strong>4</strong> Documentación</h5><p>Papeles al día</p></div></div>
+                        <div class="timeline-step"><div class="timeline-dot"></div><div class="timeline-text"><h5><strong>5</strong> Mantención</h5><p>Pautas preventivas</p></div></div>
+                        <div class="timeline-step"><div class="timeline-dot"></div><div class="timeline-text"><h5><strong>6</strong> Carga sellada</h5><p>Sello y candado</p></div></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Clientes e Indicadores -->
-    <section class="clients-tech section bg-light">
+    <!-- CLIENTES E INDICADORES -->
+    <section id="clientes" class="clients-tech section bg-light">
         <div class="container">
             <div class="tech-metrics mb-5 reveal">
-                <div class="metric">
-                    <span class="number">95%</span>
-                    <span class="label">SLA de cumplimiento</span>
-                </div>
-                <div class="metric">
-                    <span class="number">98%</span>
-                    <span class="label">Exactitud de inventario</span>
-                </div>
-                <div class="metric">
-                    <span class="number">&lt; 20 min</span>
-                    <span class="label">Tiempo de preparación</span>
-                </div>
-                <div class="metric">
-                    <span class="number">&lt; 2%</span>
-                    <span class="label">Tasa de devoluciones</span>
-                </div>
+                <div class="metric"><span class="number">95%</span><span class="label">SLA de cumplimiento</span></div>
+                <div class="metric"><span class="number">98%</span><span class="label">Exactitud de inventario</span></div>
+                <div class="metric"><span class="number">&lt; 20 min</span><span class="label">Tiempo de preparación</span></div>
+                <div class="metric"><span class="number">&lt; 2%</span><span class="label">Tasa de devoluciones</span></div>
             </div>
 
-            <div class="clients text-center mt-5 reveal delay-200">
-                <h3 class="mb-4">Clientes y Alianzas</h3>
-                <p class="mb-4">Relaciones construidas sobre cumplimiento, adaptabilidad y transparencia operativa.</p>
-                <div class="clients-list">
-                    <div class="client-logo">Chilexpress</div>
-                    <div class="client-logo">QS Logistics</div>
-                    <div class="client-logo">Lakeland</div>
-                    <div class="client-logo">Grin Group</div>
+            <div class="clients-advanced mt-5 reveal delay-200">
+                <div class="clients-header">
+                    <h3 class="clients-title">Relaciones construidas sobre cumplimiento</h3>
+                </div>
+                
+                <div class="clients-grid-advanced">
+                    <div class="client-card-advanced">
+                        <div class="client-logo-box">
+                            <img src="img/logo chileexpress.png" alt="Chilexpress" style="max-width: 90%; max-height: 65px; object-fit: contain;">
+                        </div>
+                        <h4>Chilexpress</h4>
+                        <p>Entrega diaria de flota para su operación de última milla.</p>
+                    </div>
+                    
+                    <div class="client-card-advanced">
+                        <div class="client-logo-box">
+                            <img src="img/logo qs logitics.png" alt="QS Logistics" style="max-width: 90%; max-height: 65px; object-fit: contain;">
+                        </div>
+                        <h4>QS Logistics</h4>
+                        <p>Flota dedicada para su distribución y transporte.</p>
+                    </div>
+                    
+                    <div class="client-card-advanced">
+                        <div class="client-logo-box">
+                            <img src="img/logo lakeland.png" alt="Lakeland Fire & Safety" style="max-width: 90%; max-height: 65px; object-fit: contain;">
+                        </div>
+                        <h4>Lakeland</h4>
+                        <p>Capacidad diaria para sus despachos programados.</p>
+                    </div>
+                    
+                    <div class="client-card-advanced">
+                        <div class="client-logo-box">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <img src="img/logo grin.png" alt="Grin Group Logo" style="height: 45px; object-fit: contain;">
+                            </div>
+                        </div>
+                        <h4>Grin Group</h4>
+                        <p>Distribución programada y operaciones de retail a nivel nacional.</p>
+                    </div>
+                </div>
+
+                <div class="clients-banner">
+                    <h4>COMPROMISO CON LA TRANSPARENCIA Y EL CUMPLIMIENTO</h4>
+                    <p>Trazabilidad verificable de cada despacho, reportes de cumplimiento acordados con el cliente y prueba de entrega digital en cada operación.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contacto / Footer -->
-    <footer id="contacto" class="footer">
-        <div class="container footer-grid reveal">
-            <div class="footer-brand">
-                <h2><span class="text-white">VAMA</span> <span class="text-grey">LOGISTICS</span></h2>
-                <p>Sumemos tu operación a la red VAMA.</p>
+    <!-- SECCIÓN DE CONTACTO (Formulario y Mapa) -->
+    <section id="contacto" class="contact-section section dark-section" style="border-top: 1px solid #222;">
+        <div class="container reveal">
+            <div class="section-title">
+                <h2>Conversemos</h2>
+                <p>Déjanos tus datos y nuestro equipo comercial se pondrá en contacto a la brevedad para evaluar y cotizar tu operación.</p>
             </div>
-            <div class="footer-contact">
-                <h3>Contacto Comercial</h3>
-                <ul>
-                    <li><strong>Matías Gutiérrez</strong></li>
-                    <li>📞 +56 9 9324 8016</li>
-                    <li>✉️ mgutierrez@vamalogistica.com</li>
-                    <li>📍 Eulogia Sánchez 065, Providencia, Santiago</li>
-                </ul>
+
+            <div class="contact-grid">
+                <!-- Columna Izquierda: Formulario -->
+                <div class="contact-form-container">
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre o Empresa</label>
+                                <input type="text" id="nombre" name="nombre" class="form-control" required placeholder="Ej: VAMA Logistics">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" class="form-control" required placeholder="+56 9 1234 5678">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" class="form-control" required placeholder="correo@empresa.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="servicio">Servicio de Interés</label>
+                            <select id="servicio" name="servicio" class="form-control">
+                                <option value="" disabled selected>Selecciona un servicio...</option>
+                                <option value="distribucion">Primera / Última Milla</option>
+                                <option value="almacenamiento">Gestión Logística / Bodega (WMS)</option>
+                                <option value="alimentos">Transporte de Alimentos (Thermo)</option>
+                                <option value="carga">Carga General / Rutas Nacionales</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje o Requerimiento</label>
+                            <textarea id="mensaje" name="mensaje" class="form-control" rows="4" placeholder="Cuéntanos sobre el volumen de tu operación, rutas frecuentes, etc."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Solicitud</button>
+                    </form>
+                </div>
+
+                <!-- Columna Derecha: Info Directa y Mapa -->
+                <div class="contact-info-container">
+                    <div class="contact-info-card mb-4">
+                        <h3>Contacto Comercial</h3>
+                        <ul>
+                            <li><strong>Matías Gutiérrez</strong></li>
+                            <li>📞 +56 9 9324 8016</li>
+                            <li>✉️ <a href="mailto:mgutierrez@vamalogistica.com" style="color: #aaaaaa; text-decoration: none;">mgutierrez@vamalogistica.com</a></li>
+                            <li>📍 Eulogia Sánchez 065, Providencia</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="map-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.478229864273!2d-70.634629!3d-33.436831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c58e5a7b1897%3A0x64e7232230a109a9!2sEulogia%20S%C3%A1nchez%2065%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1710000000000!5m2!1ses-419!2scl" 
+                            width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SIMPLE -->
+    <footer class="footer">
+        <div class="container reveal">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2><span class="text-white">VAMA</span> <span class="text-grey">LOGISTICS</span></h2>
+                    <p>Sumemos tu operación a la red VAMA.</p>
+                    <p class="brand-desc mt-3">Soluciones de transporte, logística y distribución de alto estándar operando de Arica a Punta Arenas.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Navegación</h3>
+                    <ul>
+                        <li><a href="#nosotros">Nuestra Empresa</a></li>
+                        <li><a href="#servicios">Servicios Logísticos</a></li>
+                        <li><a href="#distribucion">Distribución</a></li>
+                        <li><a href="#flota">Nuestra Flota</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Únete al Equipo</h3>
+                    <ul>
+                        <li><a href="https://wa.me/56993248016?text=Hola,%20me%20gustaría%20postular%20para%20trabajar%20en%20VAMA%20Logistics." target="_blank">Postula como Conductor</a></li>
+                        <li><a href="https://wa.me/56993248016?text=Hola,%20me%20interesa%20trabajar%20en%20el%20equipo%20de%20bodega." target="_blank">Personal de Operaciones</a></li>
+                        <li><a href="mailto:cv@vamalogistica.com">Enviar CV por Correo</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="footer-bottom reveal">
@@ -261,10 +458,9 @@
         </svg>
     </a>
 
-    <!-- Script de Animaciones y Menú Móvil -->
+    <!-- Scripts -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            // Menú Hamburguesa
             const menuToggle = document.getElementById("menuToggle");
             const navMenu = document.getElementById("navMenu");
             const navLinks = document.querySelectorAll(".nav-link");
@@ -274,7 +470,6 @@
                 navMenu.classList.toggle("active");
             });
 
-            // Cerrar menú al hacer clic en cualquier enlace (en dispositivos móviles)
             navLinks.forEach(link => {
                 link.addEventListener("click", () => {
                     menuToggle.classList.remove("active");
@@ -282,18 +477,14 @@
                 });
             });
 
-            // Animaciones al hacer Scroll
             const reveals = document.querySelectorAll(".reveal");
             const revealOptions = {
                 threshold: 0.15,
                 rootMargin: "0px 0px -50px 0px" 
             };
-
             const revealOnScroll = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
-                    if (!entry.isIntersecting) {
-                        return;
-                    } else {
+                    if (entry.isIntersecting) {
                         entry.target.classList.add("active");
                         observer.unobserve(entry.target);
                     }
