@@ -249,7 +249,7 @@ body {
 /* 4. HERO SECTION                           */
 /* ========================================= */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.90)), url('img/|camion vama.png') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.90)), url('img/camion vama.png') center/cover no-repeat;
     height: 80vh;
     min-height: 500px;
     display: flex;
